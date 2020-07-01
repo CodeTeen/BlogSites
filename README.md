@@ -1,30 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Dünyanın en güzel blog'u, www.mukemmel.blog!
 
-## Getting Started
+Bu proje nasıl kodlandı izlemek ister misin? Youtube videosu: https://youtu.be/cHUh0FmPd3A
 
-First, run the development server:
+## YARIŞMAYA KATIL! (son gün 1 Şubat 2020)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+1. Sağ üstte bulunan FORK tuşuna tıklayarak projeyi kendi hesabına aktar
+2. [Kurulum](#kurulum) adımlarını takip edip projeyi bilgisayarında çalışır hale getir
+3. NextJS kullanarak oluşturulmuş bu projeye yeni özellikler ekle ([ne tür özellikler ekleyebilirim?](#ne-tur))
+4. Tasarımı güzelleştir
+5. Değişiklikleri commitle
+6. Tüm değişiklikleri bir commit’e sığdırma, parçalara böl böylelikle zaman içerisinde adım adım geliştirdiğini anlayabileyim
+7. Kodun son halini heroku sunucuna yükle
+8. Video altına yorum bırakarak heroku linkini ya da kisisel domain linkini bizimle paylaş!
+9. 1 Şubat 2020 son gün, bu tarihten sonraki yorumlar yarışmaya dahil olmayacak
+10. Kazananı 15 Şubat tarihinde https://medium.com/@selmankahya adresinden açıklayacağım ve kişiye ulaşıp 1500TL’yi hesabına transfer edeceğim
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## <a name="kurulum"></a> Kurulum
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+1. NodeJS yükle: https://nodejs.org/en/download/ (ben 10.15.3 versiyonunu kullanıyorum, sen herhangi stabil güncel versiyon kullanabilirsin)
+2. Bu projeyi kendi github hesabına forkla
+3. Projeyi bilgisayarına clone'la (nasıl yapılacağini bilmiyorsan [tıkla](https://medium.com/@noteCe/github-ile-fork-ve-pull-request-be6077342834)
+4. Terminali aç, ilk olarak `yarn` ardından `yarn dev` komutlarını çalıştır
+5. Tarayıcını aç ve `http://localhost:3000` adresine git, blog anasayfasını görmelisin
+6. Kod değişiklikleri yap
+7. Sık sık değişikliklerini commit'le
+8. Videoda gösterdiğim gibi heroku'dan hesap aç ve uygulama oluştur
+9. Editör kullanarak `pages/[postId].js` ve `pages/[postId].js` dosyalarında bulunan `http://localhost:3000/` kismini heroku uygulama linki ile değiştir (linkin sağında kalan kısmı silmediğine emin ol)
+10. Bilgisayarında bulunan kodu github'a yükle ve heroku'nun uygulamayı sunucuya yüklemesini sağla
+11. Yeterince yeni özellik eklediğini düşünüyorsan ve yarışmaya katılmak istiyorsan yukarıdaki adımları takip et
+12. Tebrikler! Artık bir blog'un var. Umarım düzenli aralıklarla bildiklerini ve tecrübeni paylaşıp etrafindaki insanlara değer katmaya devam edersin. Blog'unu arkadaşlarınla ve sosyal medyadaki takipçilerinle paylaşmayı unutma!
 
-## Learn More
+## <a name="ne-tur"></a> Ne tür özellikler ekleyebilirsin?
 
-To learn more about Next.js, take a look at the following resources:
+### Kolay
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- yazı tipini değiştirebilirsin
+- renkleri değiştirebilirsin
+- bilgisayar, tablet ve mobil cihazlarda farklı ve daha güzel görünmesini sağlayabilirsin
+- ...
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Orta
 
-## Deploy on Vercel
+- her iki sayfada tekrar eden kodu refactor et (düzenle) böylelikle kod tekrarı olmasın
+- sayfalama ekleyebilirsin
+- kendi domain'inde yayınlayabilirsin
+- yazıları paylaşma linki
+- statik sayfalar ekleyebilirsin (örn. hakkında)
+- websitesi linkini ENV değişkeni olarak tanımla (localhost ve heroku linkleri arasında değişiklik yapmana gerek kalmasın, kod nerede çalıştığını anlayıp o linklerden doğru olana istek yapsın)
+- google analytics ile entegre et ve ziyaretçi trafiğini takip et
+- ...
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Zor
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- şifre korulmalı yönetim paneli oluşturabilirsin
+- veritabanı entegrasyonu
+- yazılara yorum bırakabilme özelliği ekle
+- ...
+
+## Video düzeltmeleri
+
+1. Domain eklerken URL yönlendirme aşamasında 4 seçenek içerisinden ilk opsiyonun `www.mukemmel.blog / mukemmel.blog isteklerini yönlendir` seçilmesi gerektiğini söylüyorum. Aslında olması gereken `Yalnızca mukemmel.blog isteklerini yönlendir` seçilip `www.mukemmel.org` adresine yönlendirme eklemekti.
