@@ -1,7 +1,7 @@
 {
-  "name": "mukemmel-blog",
+  "name": "webapp",
   "version": "0.1.0",
-  "private": true,
+  "private": flase,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
