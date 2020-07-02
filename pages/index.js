@@ -85,7 +85,7 @@ const Home = ({ posts }) => (
       }
 
       .blog-text{
-        height:10vh;
+        height:20%;
         overflow:hidden
       }
 
