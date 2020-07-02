@@ -23,7 +23,6 @@ const BlogPost = ({ post }) => (
             {post.date}
           </div>
         </div>
-        <div className="background"></div>
         <img className="blog-img" src={post.img} alt="post_img"/>
       </div>
       <div className="blog-body">
@@ -56,14 +55,6 @@ const BlogPost = ({ post }) => (
         padding:0;
       }
 
-      .background{
-        position:absolute;
-        top:0;
-        bottom:30vh;
-        right:0;
-        left:0;
-        background:rgba(0,0,0,0.6)
-      }
       .blog-title{
         position:absolute;
         bottom:35vh;
@@ -77,7 +68,8 @@ const BlogPost = ({ post }) => (
         right:0;
         top:20px;
         z-index:1;
-        color:#BDBDBF
+        color:#BDBDBF;
+        background:black;
       }
 
       .blog-other *{
@@ -88,6 +80,7 @@ const BlogPost = ({ post }) => (
       .blog-img{
         width:100%;
         height:100%;
+        opacity:0.4;
       }
 
       .blog-body {
