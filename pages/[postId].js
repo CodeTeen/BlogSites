@@ -75,12 +75,14 @@ const BlogPost = ({ post }) => (
       .blog-other *{
         float:right;
         margin-right:20px;
+        background:transparent;
+        z-index:3;
       }
 
       .blog-img{
         width:100%;
         height:100%;
-        opacity:0.4;
+        opacity:0.2;
       }
 
       .blog-body {
