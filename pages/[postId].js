@@ -120,7 +120,7 @@ const BlogPost = ({ post }) => (
 
 BlogPost.getInitialProps = async ({ req, query }) => {
   // TODO: aşağıdaki satırda bulunan adresi kendi sunucu adresinle değiştirmelisin
-  const res = await fetch(`https://blog-sites.herokuapp.com/api/post/${query.postId}`);
+  const res = await fetch(`https://blogsites.herokuapp.com/api/post/${query.postId}`);
   const json = await res.json();
   return { post: json.post };
 };
