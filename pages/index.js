@@ -84,7 +84,7 @@ const Home = ({ posts }) => (
         width:100%;
       }
 
-      .blog-text{
+      .blog-text ReactMarkdown{
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
