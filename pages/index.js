@@ -2,7 +2,6 @@ import React from "react";
 import fetch from "isomorphic-unfetch";
 import Head from "next/head";
 import Link from "next/link";
-import ReactMarkdown from "react-markdown";
 
 const Home = ({ posts }) => (
   <div className="container">
@@ -32,7 +31,7 @@ const Home = ({ posts }) => (
           </Link>
         </h2>
         <div className="blog-text">
-          <ReactMarkdown source={post.details} />
+          {post.intro}
         </div>
         <div className="blog-date">{post.date}</div>
       </div>
@@ -82,14 +81,6 @@ const Home = ({ posts }) => (
       .blog-img{
         max-width:600px;
         width:100%;
-      }
-
-      .blog-text ReactMarkdown{
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 4;
-        -webkit-box-orient: vertical;
       }
 
       .blog-date {
