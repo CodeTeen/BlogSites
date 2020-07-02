@@ -85,7 +85,8 @@ const Home = ({ posts }) => (
       }
 
       .blog-text{
-
+        height:50px;
+        overflow:hidden
       }
 
       .blog-date {
