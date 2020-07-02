@@ -7,7 +7,7 @@ import ReactMarkdown from "react-markdown";
 const Home = ({ posts }) => (
   <div className="container">
     <Head>
-      <title>Home</title>
+      <title>Ana Sayfa</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
